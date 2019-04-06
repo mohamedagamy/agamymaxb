@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name" translatable="false">AgamyMaxb</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_screen"> Home </string>
+    <string name="home_offers"> Offers </string>
+    <string name="home_orders"> Orders </string>
+    <string name="brands">الماركات</string>
+    <string name="categories">الفئات</string>
+
+
+    <string name="c_1_title">ملح</string>
+    <string name="c_2_title">البان</string>
+    <string name="c_3_title">خل</string>
+    <string name="c_5_title">مربي</string>
+    <string name="c_6_title">معلبات</string>
+    <string name="c_7_title">جبن</string>
+    <string name="c_8_title">فول مدمس</string>
+    <string name="c_9_title">بهارات</string>
+    <string name="c_10_title">دقيق</string>
+    <string name="c_11_title">بقوليات</string>
+    <string name="c_12_title">حلاوة طحينية</string>
+    <string name="c_13_title">صلصة</string>
+    <string name="c_14_title">عسل </string>
+    <string name="c_15_title"> طحينة </string>
+    <string name="c_16_title"> حاجة ساقعة </string>
+    <string name="c_19_title"> عصاير</string>
+    <string name="c_21_title"> مياة معدنية</string>
+    <string name="c_25_title">زبيب </string>
+    <string name="c_22_title" >ارز</string>
+    <string name="c_23_title"> شاي</string>
+    <string name="c_24_title">مكرونة  </string>
+    <string name="c_20_title"> سمنة  </string>
+    <string name="c_18_title"> سكر  </string>
+    <string name="c_17_title"> قهوة </string>
+
+
+
+    <string-array name="brands_images">
+    <item>@drawable/company1</item>
+    <item>@drawable/company2</item>
+    <item>@drawable/company3</item>
+    <item>@drawable/company4</item>
+    </string-array>
+
+    <string-array name="category_images">
+        <item>@drawable/c_1</item>
+        <item>@drawable/c_2</item>
+        <item>@drawable/c_3</item>
+        <item>@drawable/c_5</item>
+        <item>@drawable/c_6</item>
+        <item>@drawable/c_6</item>
+        <item>@drawable/c_7</item>
+        <item>@drawable/c_8</item>
+        <item>@drawable/c_9</item>
+        <item>@drawable/c_10</item>
+        <item>@drawable/c_11</item>
+        <item>@drawable/c_12</item>
+        <item>@drawable/c_13</item>
+        <item>@drawable/c_14</item>
+        <item>@drawable/c_14</item>
+        <item>@drawable/c_15</item>
+        <item>@drawable/c_16</item>
+        <item>@drawable/c_17</item>
+        <item>@drawable/c_18</item>
+        <item>@drawable/c_19</item>
+        <item>@drawable/c_20</item>
+        <item>@drawable/c_21</item>
+        <item>@drawable/c_22</item>
+        <item>@drawable/c_23</item>
+        <item>@drawable/c_24</item>
+        <item>@drawable/c_25</item>
+    </string-array>
+
+    <string-array name="category_titles">
+        <item>@string/c_1_title</item>
+        <item>@string/c_2_title</item>
+        <item>@string/c_3_title</item>
+        <item>@string/c_5_title</item>
+        <item>@string/c_6_title</item>
+        <item>@string/c_6_title</item>
+        <item>@string/c_7_title</item>
+        <item>@string/c_8_title</item>
+        <item>@string/c_9_title</item>
+        <item>@string/c_10_title</item>
+        <item>@string/c_11_title</item>
+        <item>@string/c_12_title</item>
+        <item>@string/c_13_title</item>
+        <item>@string/c_14_title</item>
+        <item>@string/c_14_title</item>
+        <item>@string/c_15_title</item>
+        <item>@string/c_16_title</item>
+        <item>@string/c_17_title</item>
+        <item>@string/c_18_title</item>
+        <item>@string/c_19_title</item>
+        <item>@string/c_20_title</item>
+        <item>@string/c_21_title</item>
+        <item>@string/c_22_title</item>
+        <item>@string/c_23_title</item>
+        <item>@string/c_24_title</item>
+        <item>@string/c_25_title</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_screen">الصفحة الرئيسية</string>
+    <string name="home_offers">العروض</string>
+    <string name="home_orders">الطلبات</string>
+    <string name="brands">الماركات</string>
+    <string name="categories">الفئات</string>
+
+
+    <string name="c_1_title">ملح</string>
+    <string name="c_2_title">البان</string>
+    <string name="c_3_title">خل</string>
+    <string name="c_5_title">مربي</string>
+    <string name="c_6_title">معلبات</string>
+    <string name="c_7_title">جبن</string>
+    <string name="c_8_title">فول مدمس</string>
+    <string name="c_9_title">بهارات</string>
+    <string name="c_10_title">دقيق</string>
+    <string name="c_11_title">بقوليات</string>
+    <string name="c_12_title">حلاوة طحينية</string>
+    <string name="c_13_title">صلصة</string>
+    <string name="c_14_title">عسل </string>
+    <string name="c_15_title"> طحينة </string>
+    <string name="c_16_title"> حاجة ساقعة </string>
+    <string name="c_19_title"> عصاير</string>
+    <string name="c_21_title"> مياة معدنية</string>
+    <string name="c_25_title">زبيب </string>
+    <string name="c_22_title" >ارز</string>
+    <string name="c_23_title"> شاي</string>
+    <string name="c_24_title">مكرونة  </string>
+    <string name="c_20_title"> سمنة  </string>
+    <string name="c_18_title"> سكر  </string>
+    <string name="c_17_title"> قهوة </string>
+</resources>
