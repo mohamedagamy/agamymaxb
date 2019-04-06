@@ -16,10 +16,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
-    aaptOptions {
-        cruncherEnabled = false
-    }
 }
 
 dependencies {
@@ -32,8 +28,4 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
 
     implementation 'com.google.android.material:material:1.0.0'
-
-    implementation 'io.github.andviane:uncover:2.0.1@aar'
-    //implementation 'com.github.markomilos:paginate:0.5.1'
-    //implementation 'com.malinskiy:superrecyclerview:1.0.0'
 }
