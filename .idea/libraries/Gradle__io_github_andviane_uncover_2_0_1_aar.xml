@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.andviane:uncover:2.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-uncover-2.0.1.aar/4d3234d78e52b54992c90c2c94ffd3f5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-uncover-2.0.1.aar/4d3234d78e52b54992c90c2c94ffd3f5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.andviane/uncover/2.0.1/2b562ccdd415dd2845d7f88ebfbb02dd766cba2/uncover-2.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
