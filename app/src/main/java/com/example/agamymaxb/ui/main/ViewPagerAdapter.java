@@ -1,4 +1,4 @@
-package com.example.agamymaxb.ui.adapter;
+package com.example.agamymaxb.ui.main;
 
 import android.content.Context;
 
@@ -10,7 +10,6 @@ import com.example.agamymaxb.ui.fragment.OrdersFragment;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {

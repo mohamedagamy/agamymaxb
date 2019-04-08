@@ -11,18 +11,19 @@ import com.example.agamymaxb.ui.interfaces.OnItemClickHandler;
 import java.util.List;
 
 import androidx.annotation.NonNull;
-import androidx.paging.PagedList;
 import androidx.paging.PagedListAdapter;
+import androidx.recyclerview.widget.ListAdapter;
+import androidx.recyclerview.widget.RecyclerView;
 
-public class CategoryAdapter extends PagedListAdapter<Category,CategoryViewHolder> {
+public class CategoryAdapter2 extends RecyclerView.Adapter<CategoryViewHolder> {
     OnItemClickHandler onItemClickHandler;
-
-    public CategoryAdapter() {
-        super(Category.DIFF_CALLBACK);
-    }
-
+    List<Category> categories;
     public void setOnItemClickHandler(OnItemClickHandler onItemClickHandler) {
         this.onItemClickHandler = onItemClickHandler;
+    }
+
+    public CategoryAdapter2(List<Category> categories) {
+        this.categories = categories;
     }
 
     @NonNull
@@ -35,11 +36,20 @@ public class CategoryAdapter extends PagedListAdapter<Category,CategoryViewHolde
     @Override
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, int position) {
         try {
-            Category category = getItem(position);
+            Category category = categories.get(position);
             if(category != null)
                 holder.bind(category);
         }catch (Exception e){}
 
+    }
+
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
+    }
+
+    @Override
+    public int getItemCount() {
+        return categories.size();
     }
 
 }

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ui.main.MainActivity">
 <!--
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar_layout"
@@ -56,7 +56,7 @@
     </com.google.android.material.tabs.TabLayout>
 
     <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"/-->
-    <com.example.agamymaxb.ui.CustomViewPager
+    <com.example.agamymaxb.utils.CustomViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

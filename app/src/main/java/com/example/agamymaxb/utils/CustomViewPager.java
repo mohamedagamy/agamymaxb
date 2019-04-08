@@ -1,4 +1,4 @@
-package com.example.agamymaxb.ui;
+package com.example.agamymaxb.utils;
 
 import android.content.Context;
 import android.content.res.TypedArray;

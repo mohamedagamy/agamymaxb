@@ -7,8 +7,7 @@ import android.view.ViewGroup;
 
 import com.example.agamymaxb.R;
 import com.example.agamymaxb.pojo.Brand;
-import com.example.agamymaxb.pojo.Category;
-import com.example.agamymaxb.ui.callbacks.OnItemClickHandler;
+import com.example.agamymaxb.ui.interfaces.OnItemClickHandler;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
