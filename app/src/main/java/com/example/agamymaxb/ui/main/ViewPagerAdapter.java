@@ -15,7 +15,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     Context mContext;
 
-    public ViewPagerAdapter(FragmentManager fm,Context context) {
+    public ViewPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.mContext = context;
     }

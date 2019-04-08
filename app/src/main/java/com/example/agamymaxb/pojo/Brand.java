@@ -1,12 +1,9 @@
 package com.example.agamymaxb.pojo;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
-import androidx.room.ColumnInfo;
-import androidx.room.PrimaryKey;
 
 public class Brand {
 
@@ -31,16 +28,6 @@ public class Brand {
 
     public void setImage(int image) {
         this.image = image;
-    }
-
-
-    public List<Brand> createBrandsList(){
-        List<Brand> brands = new ArrayList<>();
-        for (int i = 0; i <200; i++) {
-            brands.add(new Brand(image));
-        }
-
-        return brands;
     }
 
 

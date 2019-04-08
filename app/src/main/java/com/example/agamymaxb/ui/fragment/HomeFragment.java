@@ -15,7 +15,6 @@ import com.example.agamymaxb.ui.adapter.category.CategoryAdapter;
 import com.example.agamymaxb.ui.interfaces.OnItemClickHandler;
 import com.example.agamymaxb.ui.main.MainActivity;
 import com.example.agamymaxb.utils.DummyData;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -38,7 +37,7 @@ public class HomeFragment extends Fragment implements OnItemClickHandler, View.O
     BrandsAdapter brandsAdapter;
     CategoryAdapter categoryAdapter;
     BrandsPagerAdapter brandsPagerAdapter;
-    AppCompatImageView fabNext,fabPrev;
+    AppCompatImageView fabNext, fabPrev;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -64,7 +63,7 @@ public class HomeFragment extends Fragment implements OnItemClickHandler, View.O
     }
 
     private void subscribe() {
-        if(((MainActivity)getActivity()).getViewModel().getCategoryList() != null){
+        if (((MainActivity) getActivity()).getViewModel().getCategoryList() != null) {
             ((MainActivity) getActivity()).getViewModel().getCategoryList().observe(getActivity(), new Observer<PagedList<Category>>() {
                 @Override
                 public void onChanged(PagedList<Category> categories) {
@@ -83,12 +82,7 @@ public class HomeFragment extends Fragment implements OnItemClickHandler, View.O
         fabNext.setOnClickListener(this);
         fabPrev.setOnClickListener(this);
 
-       // brandsRecyclerView.setItemAnimator(new DefaultItemAnimator());
-         //brandsAdapter = new BrandsAdapter();
-        //brandsRecyclerView.setAdapter(brandsAdapter);
-        //brandsAdapter.setOnItemClickHandler(this);
-
-        brandsPagerAdapter= new BrandsPagerAdapter(getContext(), new DummyData(getContext()).getBrandsImages());
+        brandsPagerAdapter = new BrandsPagerAdapter(getContext(), new DummyData(getContext()).getBrandsImages());
         brandsPager.setAdapter(brandsPagerAdapter);
 
 
@@ -100,14 +94,14 @@ public class HomeFragment extends Fragment implements OnItemClickHandler, View.O
 
     @Override
     public void onItemClickHandler(String title) {
-        Toast.makeText(getContext(), ""+title, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(), "" + title, Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onClick(View v) {
         int totalCount = brandsPagerAdapter.getCount(); //4
-        int counterFlag=  brandsPager.getCurrentItem(); // 0
-        switch (v.getId()){
+        int counterFlag = brandsPager.getCurrentItem(); // 0
+        switch (v.getId()) {
             case R.id.fab_next_image: // 5
                 counterFlag++;
                 counterFlag = counterFlag >= totalCount ? counterFlag % totalCount : counterFlag;

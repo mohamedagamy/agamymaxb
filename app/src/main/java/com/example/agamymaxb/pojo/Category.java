@@ -2,19 +2,14 @@ package com.example.agamymaxb.pojo;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
-import androidx.room.ColumnInfo;
-import androidx.room.Entity;
-import androidx.room.Ignore;
-import androidx.room.PrimaryKey;
 
-@Entity
 public class Category {
 
     private int id;
     private int categoryImage;
     private String categoryTitle;
 
-    public Category(int id ,int categoryImage, String categoryTitle) {
+    public Category(int id, int categoryImage, String categoryTitle) {
         this.id = id;
         this.categoryImage = categoryImage;
         this.categoryTitle = categoryTitle;
@@ -46,7 +41,6 @@ public class Category {
     }
 
 
-
     public static DiffUtil.ItemCallback<Category> DIFF_CALLBACK = new DiffUtil.ItemCallback<Category>() {
         @Override
         public boolean areItemsTheSame(@NonNull Category oldItem, @NonNull Category newItem) {
@@ -56,7 +50,7 @@ public class Category {
         @Override
         public boolean areContentsTheSame(@NonNull Category oldItem, @NonNull Category newItem) {
             return oldItem.getCategoryTitle().equals(newItem.getCategoryTitle()) &&
-                    oldItem.getCategoryImage()==(newItem.getCategoryImage());
+                    oldItem.getCategoryImage() == (newItem.getCategoryImage());
         }
     };
 

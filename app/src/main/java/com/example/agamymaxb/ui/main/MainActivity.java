@@ -1,22 +1,18 @@
 package com.example.agamymaxb.ui.main;
 
 import android.os.Bundle;
-import android.view.MotionEvent;
-import android.view.View;
 
 import com.example.agamymaxb.R;
-import com.example.agamymaxb.pojo.Category;
 import com.example.agamymaxb.ui.adapter.category.CategoryViewModel;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.paging.PagedList;
 import androidx.viewpager.widget.ViewPager;
 
 public class MainActivity extends AppCompatActivity {
-   CategoryViewModel viewModel;
+    CategoryViewModel viewModel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

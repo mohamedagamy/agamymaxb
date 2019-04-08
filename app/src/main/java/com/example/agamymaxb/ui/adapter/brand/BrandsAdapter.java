@@ -19,10 +19,11 @@ public class BrandsAdapter extends RecyclerView.Adapter<BrandsViewHolder> {
     public void setOnItemClickHandler(OnItemClickHandler onItemClickHandler) {
         this.onItemClickHandler = onItemClickHandler;
     }
+
     @NonNull
     @Override
     public BrandsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view  = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_brands,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_brands, parent, false);
         return new BrandsViewHolder(view);
     }
 
@@ -35,7 +36,7 @@ public class BrandsAdapter extends RecyclerView.Adapter<BrandsViewHolder> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onItemClickHandler.onItemClickHandler("img. "+position);
+                onItemClickHandler.onItemClickHandler("img. " + position);
             }
         });
     }

@@ -27,7 +27,7 @@
     <string name="c_19_title"> عصاير</string>
     <string name="c_21_title"> مياة معدنية</string>
     <string name="c_25_title">زبيب </string>
-    <string name="c_22_title" >ارز</string>
+    <string name="c_22_title">ارز</string>
     <string name="c_23_title"> شاي</string>
     <string name="c_24_title">مكرونة  </string>
     <string name="c_20_title"> سمنة  </string>
@@ -35,12 +35,11 @@
     <string name="c_17_title"> قهوة </string>
 
 
-
     <string-array name="brands_images">
-    <item>@drawable/company1</item>
-    <item>@drawable/company2</item>
-    <item>@drawable/company3</item>
-    <item>@drawable/company4</item>
+        <item>@drawable/company1</item>
+        <item>@drawable/company2</item>
+        <item>@drawable/company3</item>
+        <item>@drawable/company4</item>
     </string-array>
 
     <string-array name="category_images">

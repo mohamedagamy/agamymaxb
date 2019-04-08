@@ -8,13 +8,10 @@ import com.example.agamymaxb.R;
 import com.example.agamymaxb.pojo.Category;
 import com.example.agamymaxb.ui.interfaces.OnItemClickHandler;
 
-import java.util.List;
-
 import androidx.annotation.NonNull;
-import androidx.paging.PagedList;
 import androidx.paging.PagedListAdapter;
 
-public class CategoryAdapter extends PagedListAdapter<Category,CategoryViewHolder> {
+public class CategoryAdapter extends PagedListAdapter<Category, CategoryViewHolder> {
     OnItemClickHandler onItemClickHandler;
 
     public CategoryAdapter() {
@@ -28,7 +25,7 @@ public class CategoryAdapter extends PagedListAdapter<Category,CategoryViewHolde
     @NonNull
     @Override
     public CategoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view  = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_categories,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_categories, parent, false);
         return new CategoryViewHolder(view);
     }
 
@@ -36,9 +33,10 @@ public class CategoryAdapter extends PagedListAdapter<Category,CategoryViewHolde
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, int position) {
         try {
             Category category = getItem(position);
-            if(category != null)
+            if (category != null)
                 holder.bind(category);
-        }catch (Exception e){}
+        } catch (Exception e) {
+        }
 
     }
 

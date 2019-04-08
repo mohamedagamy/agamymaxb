@@ -6,13 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.agamymaxb.R;
-import com.example.agamymaxb.ui.fragment.HomeFragment;
 
 import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatImageView;
-import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.viewpager.widget.PagerAdapter;
 
 public class BrandsPagerAdapter extends PagerAdapter {

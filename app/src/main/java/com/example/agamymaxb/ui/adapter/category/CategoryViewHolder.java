@@ -12,7 +12,7 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class CategoryViewHolder extends RecyclerView.ViewHolder{
+public class CategoryViewHolder extends RecyclerView.ViewHolder {
 
     AppCompatImageView ivCategory;
     AppCompatTextView tvBrandTitle;
@@ -28,13 +28,13 @@ public class CategoryViewHolder extends RecyclerView.ViewHolder{
 
     public void bind(final Category category) {
 
-        itemView.setOnClickListener(view-> {
-                Toast.makeText(mContext, ""+category.getCategoryTitle(), Toast.LENGTH_SHORT).show();
+        itemView.setOnClickListener(view -> {
+            Toast.makeText(mContext, "" + category.getCategoryTitle(), Toast.LENGTH_SHORT).show();
         });
 
-        if(category  != null){
+        if (category != null) {
             ivCategory.setImageResource(category.getCategoryImage());
-            tvBrandTitle.setText(category.getCategoryTitle()+""+category.getId());
+            tvBrandTitle.setText(category.getCategoryTitle() + "" + category.getId());
         }
     }
 }

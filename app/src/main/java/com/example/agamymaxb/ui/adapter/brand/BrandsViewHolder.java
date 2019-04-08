@@ -1,13 +1,11 @@
 package com.example.agamymaxb.ui.adapter.brand;
 
 import android.content.Context;
-import android.content.res.TypedArray;
 import android.view.View;
 import android.widget.Toast;
 
 import com.example.agamymaxb.R;
 import com.example.agamymaxb.pojo.Brand;
-import com.example.agamymaxb.pojo.Category;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatImageView;
@@ -17,6 +15,7 @@ public class BrandsViewHolder extends RecyclerView.ViewHolder implements View.On
 
     AppCompatImageView ivBrands;
     Context mContext;
+
     public BrandsViewHolder(@NonNull View itemView) {
         super(itemView);
         ivBrands = itemView.findViewById(R.id.iv_brand_pic);
@@ -25,14 +24,14 @@ public class BrandsViewHolder extends RecyclerView.ViewHolder implements View.On
     }
 
     public void bind(Brand brand) {
-        if(brand != null)
+        if (brand != null)
             ivBrands.setImageResource(brand.getImage());
     }
 
     @Override
     public void onClick(View v) {
 
-        Toast.makeText(mContext, ""+ivBrands.getDrawable().toString(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(mContext, "" + ivBrands.getDrawable().toString(), Toast.LENGTH_SHORT).show();
 
     }
 }

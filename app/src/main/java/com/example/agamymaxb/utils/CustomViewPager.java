@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 
 import com.example.agamymaxb.R;
+
 import androidx.viewpager.widget.ViewPager;
 
 public class CustomViewPager extends ViewPager {
